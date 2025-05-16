@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747414978958,
+  "lastUpdate": 1747414994786,
   "entries": {
     "Rust Benchmark": [
       {
@@ -87691,6 +87691,42 @@ window.BENCHMARK_DATA = {
             "value": 43.46426676852362,
             "unit": "ns",
             "range": "± 0.1551687572307032"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abd862194ceef9558b5b9e4a21f012a29b6ce6b2",
+          "message": "Merge pull request #1 from henrikingo/gotpc\n\nGo TPC",
+          "timestamp": "2025-05-16T20:01:43+03:00",
+          "tree_id": "1b4896be7e58ee2a887822bbd33ecaa33c830b62",
+          "url": "https://github.com/henrikingo/change-detection/commit/abd862194ceef9558b5b9e4a21f012a29b6ce6b2"
+        },
+        "date": 1747414988820,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.986958092451097,
+            "unit": "ns",
+            "range": "± 0.06432043321658766"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.318343754325596,
+            "unit": "ns",
+            "range": "± 0.032860520584699716"
           }
         ]
       }
