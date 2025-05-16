@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747172186252,
+  "lastUpdate": 1747414930019,
   "entries": {
     "Rust Benchmark": [
       {
@@ -60149,6 +60149,44 @@ window.BENCHMARK_DATA = {
             "extra": "mean: 1.6329945506532961 msec\nrounds: 612"
           }
         ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "abd862194ceef9558b5b9e4a21f012a29b6ce6b2",
+          "message": "Merge pull request #1 from henrikingo/gotpc\n\nGo TPC",
+          "timestamp": "2025-05-16T20:01:43+03:00",
+          "tree_id": "1b4896be7e58ee2a887822bbd33ecaa33c830b62",
+          "url": "https://github.com/henrikingo/change-detection/commit/abd862194ceef9558b5b9e4a21f012a29b6ce6b2"
+        },
+        "date": 1747414924162,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 76557.83076198748,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010179774722407522",
+            "extra": "mean: 13.062021089768393 usec\nrounds: 39830"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 616.8069116806931,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000028975221355831596",
+            "extra": "mean: 1.621252909237303 msec\nrounds: 617"
+          }
+        ]
       }
     ],
     "C++ Benchmark": [
@@ -94174,5 +94212,5 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "repoUrl": "https://github.com/nyrkio/change-detection"
+  "repoUrl": "https://github.com/henrikingo/change-detection"
 }
