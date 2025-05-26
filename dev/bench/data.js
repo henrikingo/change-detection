@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748244441683,
+  "lastUpdate": 1748244450087,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49387,6 +49387,44 @@ window.BENCHMARK_DATA = {
             "name": "fib(20)",
             "value": 13322,
             "range": "±0.34%",
+            "unit": "ops/sec",
+            "extra": "98 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b165ff545afe3a215919f86b8268dfbe0e7265c",
+          "message": "Merge pull request #2 from henrikingo/gotpc\n\nGotpc",
+          "timestamp": "2025-05-26T10:26:10+03:00",
+          "tree_id": "330b40bf63eaa7724f627f04c523185aa6a17eee",
+          "url": "https://github.com/henrikingo/change-detection/commit/5b165ff545afe3a215919f86b8268dfbe0e7265c"
+        },
+        "date": 1748244443896,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1630972,
+            "range": "±0.94%",
+            "unit": "ops/sec",
+            "extra": "98 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 13365,
+            "range": "±0.10%",
             "unit": "ops/sec",
             "extra": "98 samples"
           }
