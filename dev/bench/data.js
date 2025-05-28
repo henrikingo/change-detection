@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748449726360,
+  "lastUpdate": 1748449728150,
   "entries": {
     "Rust Benchmark": [
       {
@@ -95397,6 +95397,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 8.23605,
             "range": "± 903.117",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "6f2fbbfc18a77bf13f1e69c78a12241ca01ed188",
+          "message": "JMH small changes\n\nFor Java/JMH shorten test names from the beginning\n\nReorder extractJmhResult  a little\n\nAdd params to extra_info",
+          "timestamp": "2025-05-28T19:26:37+03:00",
+          "tree_id": "53009668b972e9b442d56568fc7fac6ac6bbde36",
+          "url": "https://github.com/henrikingo/change-detection/commit/6f2fbbfc18a77bf13f1e69c78a12241ca01ed188"
+        },
+        "date": 1748449721554,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 81.3201,
+            "range": "± 3.67363",
+            "unit": "ns",
+            "extra": "100 samples\n368 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.69347,
+            "range": "± 360.547",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
