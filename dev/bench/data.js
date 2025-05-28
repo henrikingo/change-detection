@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748443269533,
+  "lastUpdate": 1748443277465,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49427,6 +49427,44 @@ window.BENCHMARK_DATA = {
             "range": "±0.10%",
             "unit": "ops/sec",
             "extra": "98 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "595a28085b9a27484940c2f0e685c0f6423d3898",
+          "message": "Reorder extractJmhResult  a little",
+          "timestamp": "2025-05-28T17:40:12+03:00",
+          "tree_id": "3c888b928d03a6782966cb4590f228c9e70a6484",
+          "url": "https://github.com/henrikingo/change-detection/commit/595a28085b9a27484940c2f0e685c0f6423d3898"
+        },
+        "date": 1748443268651,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1649412,
+            "range": "±0.28%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 13301,
+            "range": "±0.54%",
+            "unit": "ops/sec",
+            "extra": "97 samples"
           }
         ]
       }
