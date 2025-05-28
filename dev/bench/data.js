@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748448352810,
+  "lastUpdate": 1748448945176,
   "entries": {
     "Rust Benchmark": [
       {
@@ -77609,6 +77609,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 7.55735,
             "range": "± 339.95",
+            "unit": "us",
+            "extra": "100 samples\n4 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "7b7ba4f88be7525c625beb9a503374cce8c72e7c",
+          "message": "No negative substring in typescript\n\nWhat was I thinking...",
+          "timestamp": "2025-05-28T19:14:21+03:00",
+          "tree_id": "53009668b972e9b442d56568fc7fac6ac6bbde36",
+          "url": "https://github.com/henrikingo/change-detection/commit/7b7ba4f88be7525c625beb9a503374cce8c72e7c"
+        },
+        "date": 1748448938917,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 79.7936,
+            "range": "± 3.43889",
+            "unit": "ns",
+            "extra": "100 samples\n363 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 7.70669,
+            "range": "± 341.133",
             "unit": "us",
             "extra": "100 samples\n4 iterations"
           }
