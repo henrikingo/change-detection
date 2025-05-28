@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748448302193,
+  "lastUpdate": 1748448322224,
   "entries": {
     "Rust Benchmark": [
       {
@@ -49501,6 +49501,44 @@ window.BENCHMARK_DATA = {
             "name": "fib(20)",
             "value": 13106,
             "range": "±0.77%",
+            "unit": "ops/sec",
+            "extra": "98 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "36dc9925970f964b797849cbd7e8b4830e9df24f",
+          "message": "For Java/JMH shorten test names from the beginning\n\n...since mostly they are just org.apache.etc...",
+          "timestamp": "2025-05-28T19:01:55+03:00",
+          "tree_id": "47e1445752f23f467dfbf33019325cf3174cddb3",
+          "url": "https://github.com/henrikingo/change-detection/commit/36dc9925970f964b797849cbd7e8b4830e9df24f"
+        },
+        "date": 1748448316000,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1611741,
+            "range": "±0.78%",
+            "unit": "ops/sec",
+            "extra": "96 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 13092,
+            "range": "±0.29%",
             "unit": "ops/sec",
             "extra": "98 samples"
           }
