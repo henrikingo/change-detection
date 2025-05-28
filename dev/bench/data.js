@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748448322224,
+  "lastUpdate": 1748448336784,
   "entries": {
     "Rust Benchmark": [
       {
@@ -88199,6 +88199,42 @@ window.BENCHMARK_DATA = {
             "value": 42.92337821211134,
             "unit": "ns",
             "range": "± 0.03348107335632944"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "36dc9925970f964b797849cbd7e8b4830e9df24f",
+          "message": "For Java/JMH shorten test names from the beginning\n\n...since mostly they are just org.apache.etc...",
+          "timestamp": "2025-05-28T19:01:55+03:00",
+          "tree_id": "47e1445752f23f467dfbf33019325cf3174cddb3",
+          "url": "https://github.com/henrikingo/change-detection/commit/36dc9925970f964b797849cbd7e8b4830e9df24f"
+        },
+        "date": 1748448330325,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.932756108542282,
+            "unit": "ns",
+            "range": "± 0.058132428418580406"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.39154524604479,
+            "unit": "ns",
+            "range": "± 0.1014626645751108"
           }
         ]
       }
