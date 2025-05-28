@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1748448949941,
+  "lastUpdate": 1748448981145,
   "entries": {
     "Rust Benchmark": [
       {
@@ -88311,6 +88311,42 @@ window.BENCHMARK_DATA = {
             "value": 43.39154524604479,
             "unit": "ns",
             "range": "± 0.1014626645751108"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "committer": {
+            "email": "henrik@nyrk.io",
+            "name": "Henrik Ingo",
+            "username": "henrikingo"
+          },
+          "distinct": true,
+          "id": "7b7ba4f88be7525c625beb9a503374cce8c72e7c",
+          "message": "No negative substring in typescript\n\nWhat was I thinking...",
+          "timestamp": "2025-05-28T19:14:21+03:00",
+          "tree_id": "53009668b972e9b442d56568fc7fac6ac6bbde36",
+          "url": "https://github.com/henrikingo/change-detection/commit/7b7ba4f88be7525c625beb9a503374cce8c72e7c"
+        },
+        "date": 1748448974316,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "Sample.Benchmarks.Fib10",
+            "value": 21.932090000311533,
+            "unit": "ns",
+            "range": "± 0.04861220252323377"
+          },
+          {
+            "name": "Sample.Benchmarks.Fib20",
+            "value": 43.43814457257589,
+            "unit": "ns",
+            "range": "± 0.059430402940106965"
           }
         ]
       }
