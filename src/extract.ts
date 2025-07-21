@@ -690,6 +690,71 @@ function extractLuauBenchmarkResult(output: string): BenchmarkResult[] {
     return results;
 }
 
+function parseTimeOutput(line: string): number | undefined {
+    core.debug(`parse time ${line}`);
+    const t = line.split('\t')[1];
+    if (t === undefined) return;
+    const tparts = t.split('m');
+
+    core.debug(tparts[0]);
+    if (tparts[1] === undefined || !tparts[1].endsWith('s')) return;
+    return parseFloat(tparts[0]) * 60.0 + parseFloat(tparts[1].substring(-1));
+}
+
+function extractTimeBenchmarkResult(output: string): BenchmarkResult[] {
+    const lines = output.split(/\n/);
+    const results: BenchmarkResult[] = [];
+    let firstline = true;
+    let name = 'default_testname';
+
+    for (const line of lines) {
+        core.debug(line);
+        if (firstline) {
+            name = line;
+            firstline = false;
+            continue;
+        }
+        if (line.startsWith('real')) {
+            const v = parseTimeOutput(line);
+            core.debug(`${v}`);
+            if (v !== undefined)
+                results.push({
+                    testName: name,
+                    name: 'real',
+                    value: v,
+                    unit: 's',
+                });
+        }
+        if (line.startsWith('user')) {
+            const v = parseTimeOutput(line);
+
+            core.debug(`${v}`);
+            if (v !== undefined)
+                results.push({
+                    testName: name,
+                    name: 'user',
+                    value: v,
+                    unit: 's',
+                });
+        }
+        if (line.startsWith('sys')) {
+            const v = parseTimeOutput(line);
+            core.debug(`${v}`);
+            if (v !== undefined)
+                results.push({
+                    testName: name,
+                    name: 'sys',
+                    value: v,
+                    unit: 's',
+                });
+            firstline = true;
+        }
+        core.debug('loop');
+    }
+
+    return results;
+}
+
 export async function extractResult(config: Config): Promise<Benchmark> {
     const output = await fs.readFile(config.outputFilePath, 'utf8');
     const { tool, githubToken, ref } = config;
@@ -722,6 +787,9 @@ export async function extractResult(config: Config): Promise<Benchmark> {
             break;
         case 'benchmarkdotnet':
             benches = extractBenchmarkDotnetResult(output);
+            break;
+        case 'time':
+            benches = extractTimeBenchmarkResult(output);
             break;
         case 'customBiggerIsBetter':
             benches = extractCustomBenchmarkResult(output);
